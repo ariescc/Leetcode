@@ -7,7 +7,7 @@ public:
         int cnt = 0;
         vector<vector<int>> ans;
         vector<int> temp;
-        if(need > have) return nums;
+        if(have != need) return nums;
         else {
             for(int i = 0; i < nums.size(); i++) {
                 for(int j = 0; j < nums[0].size(); j++) {
